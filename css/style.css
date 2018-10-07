@@ -458,6 +458,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #8eabbf;
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+h2 {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 .section {
   background-color: #FFF;
   box-shadow: 5px 5px 20px 10px #e9e9e7;
@@ -501,13 +515,6 @@ body {
   padding: 0 20px;
 }
 
-.header-title {
-  color: #a6a6a6;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
 .btn {
   background-color: #F58220;
   border: none;
@@ -540,7 +547,23 @@ body {
   background-color: #bababa;
 }
 
-table td, table th {
+table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  width: 100%;
+}
+
+table th {
+  border-bottom: 1px solid #E3E3E3;
+  height: 40px;
+}
+
+table tr:hover {
+  background-color: #f1f3f3;
+}
+
+table td {
+  border-right: none;
   border-bottom: 1px solid #E3E3E3;
   height: 40px;
 }
@@ -552,6 +575,10 @@ table td, table th {
 .tbl-cell-text {
   color: #a6a6a6;
   font-weight: bold;
+}
+
+.tbl-align-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

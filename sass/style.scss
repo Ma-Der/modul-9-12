@@ -6,9 +6,23 @@
   box-sizing: border-box;
   margin: 0;
 }
-body{
+body {
   background-color: #F5F5F2;
   font-family: $main-font;
+}
+
+a {
+  color: $link-color;
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+h2 {
+  color: $header-color;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .section {
@@ -53,12 +67,7 @@ body{
   line-height: 42px;
   padding: 0 20px;
 }
-.header-title {
-  color: $header-color;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
+
 .btn {
   background-color: $button-color;
   border: none;
@@ -90,7 +99,21 @@ body{
 }
 
 table {
-  td, th {
+  border-collapse: collapse;
+  border-radius: 5px;
+  width: 100%;
+  th {
+  border-bottom: 1px solid $disabled-button-color;
+  height: 40px;
+  }
+  tr {
+
+    &:hover {
+      background-color: #f1f3f3;
+    }
+  }
+  td {
+  border-right: none;
   border-bottom: 1px solid $disabled-button-color;
   height: 40px;
   }
@@ -102,4 +125,7 @@ table {
 .tbl-cell-text {
   color: $header-color;
   font-weight: bold;
+}
+.tbl-align-right {
+  text-align: right;
 }

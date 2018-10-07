@@ -1,0 +1,29 @@
+.row {
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+[class*="col-"] {
+	border: none;
+	float: left;
+	height: auto;
+	margin: 0 auto;
+	min-height: 1px;
+	overflow: auto;
+}
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: ((100%/12) * $i);
+	}
+}
+
+@for $i from 0 through 11 {
+	.col-offset-#{$i} {
+		width: ((100%/12) * $i);
+	}
+}

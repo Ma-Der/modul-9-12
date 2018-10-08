@@ -55,6 +55,54 @@ h2 {
   height: 100vh;
   position: fixed;
   width: 14.6875%;
+  a {
+    color: #000;
+    display: block;
+  }
+  img{
+    display: block;
+    filter: invert(60%);
+    height: 14px;
+    margin: 12px auto;
+    width: 14px;
+  }
+  .sidebar-link {
+    border-left: 5px solid #191919;
+    height: 40px;
+    width: 100%;
+
+    &:hover {
+      background-color: $sidebar-hover-color;
+      border-left: 5px solid $button-color;
+      a, img, p {
+        filter: invert(100%);
+      }
+    }
+  }
+  .logo {
+    height: 60px;
+    width: 100%;
+    }
+  .icon-link {
+    height: 40px;
+    p {
+      filter: invert(60%);
+      font-size: 14px;
+      font-weight: 400;
+      margin: 11px 0;
+    }
+  }
+}
+.sidebar-end {
+  border-bottom: 1px solid #333;
+  height: 40px;
+  width: 100%;
+}
+.manager {
+  margin: 20px 17px;
+  h2 {
+    font-size: 14px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -64,7 +112,7 @@ h2 {
 .section-title {
   border-bottom: 1px solid $disabled-button-color;
   height: 50px;
-  line-height: 42px;
+  line-height: 50px;
   padding: 0 20px;
 }
 
@@ -80,6 +128,13 @@ h2 {
   line-height: 40px;
   padding: 0 20px;
   margin: 25px 15px;
+  img {
+    filter: invert(100%);
+    height: 15px;
+    line-height: 40px;
+    width: 15px;
+    margin: auto 5px;
+  }
 
   &:hover {
     background-color: $button-hover-color;

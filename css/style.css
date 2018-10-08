@@ -503,6 +503,64 @@ h2 {
   width: 14.6875%;
 }
 
+.sidebar a {
+  color: #000;
+  display: block;
+}
+
+.sidebar img {
+  display: block;
+  filter: invert(60%);
+  height: 14px;
+  margin: 12px auto;
+  width: 14px;
+}
+
+.sidebar .sidebar-link {
+  border-left: 5px solid #191919;
+  height: 40px;
+  width: 100%;
+}
+
+.sidebar .sidebar-link:hover {
+  background-color: #282828;
+  border-left: 5px solid #F58220;
+}
+
+.sidebar .sidebar-link:hover a, .sidebar .sidebar-link:hover img, .sidebar .sidebar-link:hover p {
+  filter: invert(100%);
+}
+
+.sidebar .logo {
+  height: 60px;
+  width: 100%;
+}
+
+.sidebar .icon-link {
+  height: 40px;
+}
+
+.sidebar .icon-link p {
+  filter: invert(60%);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 11px 0;
+}
+
+.sidebar-end {
+  border-bottom: 1px solid #333;
+  height: 40px;
+  width: 100%;
+}
+
+.manager {
+  margin: 20px 17px;
+}
+
+.manager h2 {
+  font-size: 14px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 685px;
@@ -511,7 +569,7 @@ h2 {
 .section-title {
   border-bottom: 1px solid #E3E3E3;
   height: 50px;
-  line-height: 42px;
+  line-height: 50px;
   padding: 0 20px;
 }
 
@@ -527,6 +585,14 @@ h2 {
   line-height: 40px;
   padding: 0 20px;
   margin: 25px 15px;
+}
+
+.btn img {
+  filter: invert(100%);
+  height: 15px;
+  line-height: 40px;
+  width: 15px;
+  margin: auto 5px;
 }
 
 .btn:hover {

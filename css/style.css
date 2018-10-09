@@ -487,6 +487,18 @@ h2 {
   clear: both;
 }
 
+.section-title {
+  border-bottom: 1px solid #E3E3E3;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 685px;
+}
+
 .navbar {
   background-color: #FFF;
   border-bottom: 1px solid #E3E3E3;
@@ -494,6 +506,80 @@ h2 {
   left: 14.6875%;
   height: 60px;
   width: 85.3125%;
+}
+
+.money {
+  border-left: 1px solid #E3E3E3;
+  color: #9c9c9c;
+  padding: 20px;
+}
+
+.money .wallet {
+  background-image: url(../images/wallet.svg);
+  background-size: cover;
+  display: inline-block;
+  filter: invert(60%);
+  height: 22px;
+  width: 21px;
+}
+
+.money p {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 20px 0 15px;
+}
+
+.money .arrow-down {
+  background-image: url(../images/arrow-down.svg);
+  background-size: cover;
+  display: inline-block;
+  filter: invert(60%);
+  height: 8px;
+  object-fit: cover;
+  width: 14px;
+}
+
+.bell {
+  border-left: 1px solid #E3E3E3;
+  padding: 20px;
+}
+
+.bell .notification {
+  background-image: url(../images/notification.svg);
+  background-size: cover;
+  height: 23px;
+  position: relative;
+  width: 22px;
+}
+
+.bell-indicator {
+  background-color: #f58220;
+  border-radius: 50%;
+  bottom: 70%;
+  height: 8px;
+  left: 60%;
+  position: absolute;
+  width: 8px;
+  z-index: 1;
+}
+
+.profile {
+  border-left: 1px solid #E3E3E3;
+  padding: 16px;
+}
+
+.profile .profile-icon {
+  background-image: url(../images/profile.svg);
+  background-size: cover;
+  display: inline-block;
+  height: 22px;
+  width: 21px;
+}
+
+.profile p {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 20px 0px 15px;
 }
 
 .sidebar {
@@ -531,7 +617,7 @@ h2 {
   filter: invert(100%);
 }
 
-.sidebar .logo {
+.sidebar .logo-part {
   height: 60px;
   width: 100%;
 }
@@ -553,6 +639,20 @@ h2 {
   width: 100%;
 }
 
+.logo img {
+  filter: invert(0%);
+  height: 20px;
+  margin: 20px auto;
+  width: 45.75%;
+}
+
+.hamburger img {
+  float: right;
+  height: 17px;
+  margin: 22px 15px 20px;
+  width: 30.3%;
+}
+
 .manager {
   margin: 20px 17px;
 }
@@ -561,16 +661,31 @@ h2 {
   font-size: 14px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 685px;
+.manager-photo {
+  height: 90px;
+  position: relative;
 }
 
-.section-title {
-  border-bottom: 1px solid #E3E3E3;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 20px;
+.manager-photo img {
+  filter: invert(0%);
+  height: 45px;
+  width: 45px;
+}
+
+.manager-name {
+  color: #425e72;
+  line-height: 65px;
+}
+
+.indicator {
+  background-color: #04ae00;
+  border-radius: 50%;
+  bottom: 78%;
+  height: 8px;
+  left: 63%;
+  position: absolute;
+  width: 8px;
+  z-index: 12;
 }
 
 .btn {

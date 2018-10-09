@@ -25,6 +25,8 @@ h2 {
   text-transform: uppercase;
 }
 
+// SECTION //
+
 .section {
   background-color: #FFF;
   box-shadow: 5px 5px 20px 10px #e9e9e7;
@@ -40,6 +42,19 @@ h2 {
   	clear: both;
   }
 }
+.section-title {
+  border-bottom: 1px solid $disabled-button-color;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 685px;
+}
+
+
+// NAVBAR //
 
 .navbar {
   background-color: #FFF;
@@ -49,6 +64,71 @@ h2 {
   height: 60px;
   width: 85.3125%;
 }
+.money {
+  border-left: 1px solid $disabled-button-color;
+  color: #9c9c9c;
+  padding: 20px;
+  .wallet {
+    background-image: url(../images/wallet.svg);
+    background-size: cover;
+    display: inline-block;
+    filter: invert(60%);
+    height: 22px;
+    width: 21px;
+  }
+  p {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 20px 0 15px;
+  }
+  .arrow-down {
+    background-image: url(../images/arrow-down.svg);
+    background-size: cover;
+    display: inline-block;
+    filter: invert(60%);
+    height: 8px;
+    object-fit: cover;
+    width: 14px;
+  }
+}
+.bell {
+  border-left: 1px solid $disabled-button-color;
+  padding: 20px;
+  .notification {
+    background-image: url(../images/notification.svg);
+    background-size: cover;
+    height: 23px;
+    position: relative;
+    width: 22px;
+  }
+}
+.bell-indicator {
+  background-color: #f58220;
+  border-radius: 50%;
+  bottom: 70%;
+  height: 8px;
+  left: 60%;
+  position: absolute;
+  width: 8px;
+  z-index: 1;
+}
+.profile {
+  border-left: 1px solid $disabled-button-color;
+  padding: 16px;
+  .profile-icon {
+    background-image: url(../images/profile.svg);
+    background-size: cover;
+    display: inline-block;
+    height: 22px;
+    width: 21px;
+  }
+  p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 20px 0px 15px;
+  }
+}
+// SIDEBAR //
 
 .sidebar{
   background-color: #191919;
@@ -79,7 +159,7 @@ h2 {
       }
     }
   }
-  .logo {
+  .logo-part {
     height: 60px;
     width: 100%;
     }
@@ -98,23 +178,52 @@ h2 {
   height: 40px;
   width: 100%;
 }
+.logo {
+  img {
+    filter: invert(0%);
+    height: 20px;
+    margin: 20px auto;
+    width: 45.75%;
+  }
+}
+.hamburger {
+  img {
+    float: right;
+    height: 17px;
+    margin: 22px 15px 20px;
+    width: 30.3%;
+  }
+}
 .manager {
   margin: 20px 17px;
   h2 {
     font-size: 14px;
   }
 }
-.container {
-  margin: 0 auto;
-  max-width: 685px;
-
+.manager-photo {
+  height: 90px;
+  position: relative;
+  img {
+    filter: invert(0%);
+    height: 45px;
+    width: 45px;
+  }
 }
-.section-title {
-  border-bottom: 1px solid $disabled-button-color;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 20px;
+.manager-name {
+  color: #425e72;
+  line-height: 65px;
 }
+.indicator {
+  background-color: #04ae00;
+  border-radius: 50%;
+  bottom: 78%;
+  height: 8px;
+  left: 63%;
+  position: absolute;
+  width: 8px;
+  z-index: 12;
+}
+// BUTTONS //
 
 .btn {
   background-color: $button-color;
@@ -152,6 +261,8 @@ h2 {
     background-color: $button-diff-hover-color;
   }
 }
+
+// TABLE //
 
 table {
   border-collapse: collapse;

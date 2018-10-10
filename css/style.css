@@ -477,7 +477,7 @@ h2 {
   box-shadow: 5px 5px 20px 10px #e9e9e7;
   float: right;
   min-height: 800px;
-  margin: 80px 20px 0;
+  margin: 80px 20px 20px;
   width: 82.1875%;
 }
 
@@ -508,56 +508,49 @@ h2 {
   width: 85.3125%;
 }
 
-.money {
+.navbar .notification {
+  border-left: 1px solid #E3E3E3;
+  height: 60px;
+  position: relative;
+  width: 5%;
+}
+
+.navbar .notification img {
+  height: 20px;
+  filter: invert(60%);
+  margin: 18px 0;
+  width: 100%;
+}
+
+.navbar .money {
   border-left: 1px solid #E3E3E3;
   color: #9c9c9c;
-  padding: 20px;
+  height: 60px;
+  padding: 18px 10px;
 }
 
-.money .wallet {
-  background-image: url(../images/wallet.svg);
-  background-size: cover;
-  display: inline-block;
+.navbar .money img {
   filter: invert(60%);
-  height: 22px;
-  width: 21px;
+  height: 20px;
 }
 
-.money p {
+.navbar .money p {
   display: inline-block;
-  font-size: 22px;
-  margin: 0 20px 0 15px;
+  font-size: 20px;
+  margin: 0 10px 0 15px;
 }
 
-.money .arrow-down {
-  background-image: url(../images/arrow-down.svg);
-  background-size: cover;
-  display: inline-block;
-  filter: invert(60%);
+.navbar .money .arrow-down {
   height: 8px;
-  object-fit: cover;
   width: 14px;
-}
-
-.bell {
-  border-left: 1px solid #E3E3E3;
-  padding: 20px;
-}
-
-.bell .notification {
-  background-image: url(../images/notification.svg);
-  background-size: cover;
-  height: 23px;
-  position: relative;
-  width: 22px;
 }
 
 .bell-indicator {
   background-color: #f58220;
   border-radius: 50%;
-  bottom: 70%;
+  bottom: 62%;
   height: 8px;
-  left: 60%;
+  left: 51%;
   position: absolute;
   width: 8px;
   z-index: 1;
@@ -565,21 +558,40 @@ h2 {
 
 .profile {
   border-left: 1px solid #E3E3E3;
-  padding: 16px;
+  padding: 18px;
+  height: 60px;
 }
 
-.profile .profile-icon {
-  background-image: url(../images/profile.svg);
-  background-size: cover;
-  display: inline-block;
-  height: 22px;
-  width: 21px;
+.profile img {
+  filter: invert(60%);
+  height: 20px;
+}
+
+.profile .profile-text {
+  height: 24px;
 }
 
 .profile p {
-  display: inline-block;
+  color: #9c9c9c;
   font-size: 14px;
-  margin: 0 20px 0px 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.exit {
+  border-left: 1px solid #E3E3E3;
+  height: 60px;
+  padding: 1.5%;
+  width: 5%;
+}
+
+.exit img {
+  filter: invert(60%);
+  height: 16px;
+}
+
+.bigger {
+  width: 56.66%;
 }
 
 .sidebar {
@@ -698,7 +710,7 @@ h2 {
   font-weight: 100;
   height: 40px;
   line-height: 40px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 25px 15px;
 }
 
@@ -760,6 +772,24 @@ table td {
 
 .tbl-align-right {
   text-align: right;
+}
+
+.date {
+  min-height: 110px;
+}
+
+.date-line {
+  border: 1px solid #E3E3E3;
+  min-height: 40px;
+  margin: 25px 10px;
+}
+
+.date-line .border {
+  border-right: 1px solid #E3E3E3;
+}
+
+.date-line p {
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,7 +32,7 @@ h2 {
   box-shadow: 5px 5px 20px 10px #e9e9e7;
   float: right;
   min-height: 800px;
-  margin: 80px 20px 0;
+  margin: 80px 20px 20px;
   width: 82.1875%;
 
   &::before,
@@ -63,70 +63,79 @@ h2 {
   left: 14.6875%;
   height: 60px;
   width: 85.3125%;
-}
-.money {
-  border-left: 1px solid $disabled-button-color;
-  color: #9c9c9c;
-  padding: 20px;
-  .wallet {
-    background-image: url(../images/wallet.svg);
-    background-size: cover;
-    display: inline-block;
-    filter: invert(60%);
-    height: 22px;
-    width: 21px;
-  }
-  p {
-    display: inline-block;
-    font-size: 22px;
-    margin: 0 20px 0 15px;
-  }
-  .arrow-down {
-    background-image: url(../images/arrow-down.svg);
-    background-size: cover;
-    display: inline-block;
-    filter: invert(60%);
-    height: 8px;
-    object-fit: cover;
-    width: 14px;
-  }
-}
-.bell {
-  border-left: 1px solid $disabled-button-color;
-  padding: 20px;
   .notification {
-    background-image: url(../images/notification.svg);
-    background-size: cover;
-    height: 23px;
+    border-left: 1px solid $disabled-button-color;
+    height: 60px;
     position: relative;
-    width: 22px;
+    width: 5%;
+    img {
+      height: 20px;
+      filter: invert(60%);
+      margin: 18px 0;
+      width: 100%;
+    }
+  }
+  .money {
+    border-left: 1px solid $disabled-button-color;
+    color: #9c9c9c;
+    height: 60px;
+    padding: 18px 10px;
+    img {
+      filter: invert(60%);
+      height: 20px;
+    }
+    p {
+      display: inline-block;
+      font-size: 20px;
+      margin: 0 10px 0 15px;
+    }
+    .arrow-down {
+      height: 8px;
+      width: 14px;
+    }
   }
 }
 .bell-indicator {
   background-color: #f58220;
   border-radius: 50%;
-  bottom: 70%;
+  bottom: 62%;
   height: 8px;
-  left: 60%;
+  left: 51%;
   position: absolute;
   width: 8px;
   z-index: 1;
 }
 .profile {
   border-left: 1px solid $disabled-button-color;
-  padding: 16px;
-  .profile-icon {
-    background-image: url(../images/profile.svg);
-    background-size: cover;
-    display: inline-block;
-    height: 22px;
-    width: 21px;
+  padding: 18px;
+  height: 60px;
+  img {
+    filter: invert(60%);
+    height: 20px;
+  }
+  .profile-text {
+    height: 24px;
   }
   p {
-    display: inline-block;
+    color: #9c9c9c;
     font-size: 14px;
-    margin: 0 20px 0px 15px;
+    margin-top: 5px;
+    text-align: center;
   }
+}
+.exit {
+  border-left: 1px solid $disabled-button-color;
+  height: 60px;
+  padding: 1.5%;
+  width: 5%;
+  img {
+    filter: invert(60%);
+    height: 16px;
+    //margin: 15px;
+  }
+}
+.bigger {
+  width: 56.66%;
 }
 // SIDEBAR //
 
@@ -223,6 +232,7 @@ h2 {
   width: 8px;
   z-index: 12;
 }
+
 // BUTTONS //
 
 .btn {
@@ -235,7 +245,7 @@ h2 {
   font-weight: 100;
   height: 40px;
   line-height: 40px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 25px 15px;
   img {
     filter: invert(100%);
@@ -294,4 +304,19 @@ table {
 }
 .tbl-align-right {
   text-align: right;
+}
+// GENERAL SECTION //
+.date {
+  min-height: 110px;
+}
+.date-line {
+  border: 1px solid $disabled-button-color;
+  min-height: 40px;
+  margin: 25px 10px;
+  .border {
+    border-right: 1px solid $disabled-button-color;
+  }
+  p {
+    padding: 10px 20px;
+  }
 }

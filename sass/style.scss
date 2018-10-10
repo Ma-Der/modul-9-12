@@ -25,6 +25,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  color: $header-color;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 // SECTION //
 
 .section {
@@ -305,18 +311,34 @@ table {
 .tbl-align-right {
   text-align: right;
 }
+
 // GENERAL SECTION //
+
 .date {
+  border-bottom: 1px solid $disabled-button-color;
   min-height: 110px;
+  button {
+    margin-top: 35px;
+  }
+  .date-img {
+    text-align: right;
+    padding: 10px;
+  }
 }
 .date-line {
   border: 1px solid $disabled-button-color;
   min-height: 40px;
-  margin: 25px 10px;
+  margin: 35px 10px;
   .border {
     border-right: 1px solid $disabled-button-color;
   }
   p {
     padding: 10px 20px;
   }
+}
+.general-table {
+  padding: 18px 0 80px 0;
+}
+.chart {
+  margin-top: 45px;
 }

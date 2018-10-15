@@ -448,42 +448,13 @@ template {
   width: 91.66667%;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: #F5F5F2;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: #8eabbf;
-  font-size: 16px;
-  font-weight: 200;
-  text-decoration: none;
-}
-
-h2 {
-  color: #a6a6a6;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h3 {
-  color: #a6a6a6;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .section {
   background-color: #FFF;
   box-shadow: 5px 5px 20px 10px #e9e9e7;
   float: right;
-  min-height: 800px;
+  min-height: 300px;
   margin: 80px 20px 20px;
+  padding-bottom: 20px;
   width: 82.1875%;
 }
 
@@ -498,6 +469,101 @@ h3 {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table th {
+  border-bottom: 1px solid #E3E3E3;
+  height: 40px;
+}
+
+table tr {
+  height: 40px;
+}
+
+table tr:hover {
+  background-color: #f1f3f3;
+}
+
+table td {
+  border-right: none;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.tbl-cell-width {
+  width: 280px;
+}
+
+.tbl-cell-text {
+  color: #a6a6a6;
+  font-weight: bold;
+}
+
+.tbl-align-right {
+  text-align: right;
+}
+
+.tbl-align-center {
+  text-align: center;
+}
+
+.tbl-border-top {
+  border-top: 1px solid #E3E3E3;
+}
+
+.tbl-row-xl {
+  height: 50px;
+}
+
+.btn {
+  background-color: #F58220;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 100;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin: 25px 15px;
+}
+
+.btn img {
+  filter: invert(100%);
+  height: 15px;
+  line-height: 40px;
+  width: 15px;
+  margin: auto 5px;
+}
+
+.btn:hover {
+  background-color: #FFA200;
+}
+
+.btn:disabled,
+.btn .btn[disabled] {
+  background-color: #E3E3E3;
+  cursor: default;
+}
+
+.btn-color-change {
+  background-color: #979797;
+}
+
+.btn-color-change:hover {
+  background-color: #bababa;
+}
+
+.btn-wider {
+  padding: 0 30px;
 }
 
 .container {
@@ -706,80 +772,6 @@ h3 {
   z-index: 12;
 }
 
-.btn {
-  background-color: #F58220;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 100;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 10px;
-  margin: 25px 15px;
-}
-
-.btn img {
-  filter: invert(100%);
-  height: 15px;
-  line-height: 40px;
-  width: 15px;
-  margin: auto 5px;
-}
-
-.btn:hover {
-  background-color: #FFA200;
-}
-
-.btn:disabled,
-.btn .btn[disabled] {
-  background-color: #E3E3E3;
-  cursor: default;
-}
-
-.btn-color-change {
-  background-color: #979797;
-}
-
-.btn-color-change:hover {
-  background-color: #bababa;
-}
-
-table {
-  border-collapse: collapse;
-  border-radius: 5px;
-  width: 100%;
-}
-
-table th {
-  border-bottom: 1px solid #E3E3E3;
-  height: 40px;
-}
-
-table tr:hover {
-  background-color: #f1f3f3;
-}
-
-table td {
-  border-right: none;
-  border-bottom: 1px solid #E3E3E3;
-  height: 40px;
-}
-
-.tbl-cell-width {
-  width: 280px;
-}
-
-.tbl-cell-text {
-  color: #a6a6a6;
-  font-weight: bold;
-}
-
-.tbl-align-right {
-  text-align: right;
-}
-
 .date {
   border-bottom: 1px solid #E3E3E3;
   min-height: 110px;
@@ -815,5 +807,43 @@ table td {
 .chart {
   margin-top: 45px;
 }
+
+.button-align {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #F5F5F2;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #8eabbf;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+h2 {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Media querries:
+I - 1280px and higher
+II - */
 
 /*# sourceMappingURL=style.css.map */

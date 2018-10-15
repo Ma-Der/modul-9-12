@@ -10,18 +10,18 @@
 		<div class=" row navbar">
 			<div class="col-6 bigger"></div>
 			<div class="col-2 money">
-				<img src="../images/wallet.svg" alt="wallet">
+				<img src="./images/wallet.svg" alt="wallet">
 				<p>$1,500.00</p>
-				<img src="../images/arrow-down.svg" class="arrow-down" alt="arrow-down">
+				<img src="./images/arrow-down.svg" class="arrow-down" alt="arrow-down">
 			</div>
 			<div class="col-1 notification">
-				<img src="../images/notification.svg" alt="notification">
+				<img src="./images/notification.svg" alt="notification">
 				<div class="bell-indicator"></div>
 			</div>
 			<div class="col-2">
 				<div class="row profile">
 					<div class="col-2">
-						<img src="../images/profile.svg" alt="profile">
+						<img src="./images/profile.svg" alt="profile">
 					</div>
 					<div class="col-10 profile-text">
 					<p>Leonardo Dicaprio</p>
@@ -29,56 +29,44 @@
 				</div>
 			</div>
 			<div class="col-1 exit">
-				<img src="../images/exit.png">
+				<img src="./images/exit.png">
 			</div>
 		</div>
 		<div class="sidebar">
 				<div class="row logo-part">
-					<div class="col-8 logo"><img src="../images/logo.png" alt="logo"></div>
-					<div class="col-4 hamburger"><img src="../images/hamburger.png" alt="hamburger"></div>
+					<div class="col-8 logo"><img src="./images/logo.png" alt="logo"></div>
+					<div class="col-4 hamburger"><img src="./images/hamburger.png" alt="hamburger"></div>
 				</div>
-				<a target="_self" href="../src/general.html" alt="general">
-					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/general.svg" alt="general"></div>
+
+					<div class="row sidebar-link" onClick="document.getElementById('page').innerHTML = loadPage('./src/general.html');">
+						<div class="col-2 icon-link"><img src="./images/general.svg" alt="general"></div>
 						<div class="col-10 icon-link"><p>General</p></div>
 					</div>
-				</a>
-				<a href="#" alt="details">
+
 					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/details.svg" alt="details"></div>
+						<div class="col-2 icon-link"><img src="./images/details.svg" alt="details"></div>
 						<div class="col-10 icon-link"><p>Details</p></div>
 					</div>
-				</a>
-				<a href="#" alt="links">
-					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/links.svg" alt="links"></div>
+					<div class="row sidebar-link" onClick="document.getElementById('page').innerHTML = loadPage('./src/links.html');">
+						<div class="col-2 icon-link"><img src="./images/links.svg" alt="links"></div>
 						<div class="col-10 icon-link"><p>Links</p></div>
 					</div>
-				</a>
-				<a href="#" alt="banners">
-					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/banners.svg" alt="banners"></div>
+					<div class="row sidebar-link" onClick="document.getElementById('page').innerHTML = loadPage('./src/banners.html');">
+						<div class="col-2 icon-link"><img src="./images/banners.svg" alt="banners"></div>
 						<div class="col-10 icon-link"><p>Banners</p></div>
 					</div>
-				</a>
-				<a href="#" alt="personaldata">
-					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/personaldata.svg" alt="personaldata"></div>
+					<div class="row sidebar-link" onClick="document.getElementById('page').innerHTML = loadPage('./src/personaldata.html');">
+						<div class="col-2 icon-link"><img src="./images/personaldata.svg" alt="personaldata"></div>
 						<div class="col-10 icon-link"><p>Personal Data</p></div>
 					</div>
-				</a>
-				<a href="#" alt="payout">
 					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/payout.svg" alt="payout"></div>
+						<div class="col-2 icon-link"><img src="./images/payout.svg" alt="payout"></div>
 						<div class="col-10 icon-link"><p>Payout</p></div>
 					</div>
-				</a>
-				<a href="#" alt="postback">
 					<div class="row sidebar-link">
-						<div class="col-2 icon-link"><img src="../images/postback.svg" alt="postback"></div>
+						<div class="col-2 icon-link"><img src="./images/postback.svg" alt="postback"></div>
 						<div class="col-10 icon-link"><p>Postback</p></div>
 					</div>
-				</a>
 				<div class="row sidebar-end">
 					<div class="col-12"></div>
 				</div>
@@ -86,66 +74,13 @@
 					<div class="col-12 manager"><h2>your manager</h2></div>
 				</div>
 				<div class="row">
-					<div class="col-4 manager-photo"><img src="../images/managerphoto.png" alt="manager"><div class="indicator"></div></div>
+					<div class="col-4 manager-photo"><img src="./images/managerphoto.png" alt="manager"><div class="indicator"></div></div>
 					<div class="col-8"><p class="manager-name">Mikhael E.</p></div>
 				</div>
 		</div>
 	</div>
-	<div class="section">
-		<div class="section-title">
-			<h2>general statistics</h2>
-		</div>
-		<div class="date">
-			<div class="row container">
-				<div class="col-8 date-line">
-					<div class="col-5 border">
-						<p>16.05.2016</p>
-					</div>
-					<div class="col-5">
-						<p>16.05.2016</p>
-					</div>
-					<div class="col-2 date-img">
-						<img src="../images/date-picker.png" alt="datepicker">
-					</div>
-				</div>
-				<div class="col-2">
-					<button class="btn"><img src="../images/refresh.svg"></button>
-				</div>
-			</div>
-		</div>﻿
-		<div class="row container general-table">
-			<div class="col-5">
-				<table>
-					<tr>
-						<td class="tbl-cell-width tbl-cell-text">Visit Signups</td>
-						<td class="tbl-align-right">124</td>
-					</tr>
-					<tr>
-						<td class="tbl-cell-text">FTD</td>
-						<td class="tbl-align-right">445</td>
-					</tr>
-				</table>
-			</div>
-			<div class="col-2"></div>
-				<div class="col-5">
-					<table>
-						<tr>
-							<td class="tbl-cell-width tbl-cell-text">Net deposit</td>
-							<td class="tbl-align-right">564</td>
-						</tr>
-						<tr>
-							<td class="tbl-cell-text">Turn over</td>
-							<td class="tbl-align-right">432</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="container">
-				<h3>Earnings chart</h3>
-				<div class="chart">
-					<img src="../images/graph.png" alt="chart">
-				</div>
-			</div>
+	<div class="section" id="page"></div>
 
+<script src="js/script.js"></script>
 </body>
 </html>

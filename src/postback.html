@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <div class="section-title">
+      <h2>new postback</h2>
+		</div>
+    <section class="postback-padding">
+    <p class="postback-text">You can insert some parameters in this postback: </p>
+    <div>
+      <form>
+        <div class="row textarea-padding-bottom">
+          <div class="col-6 textarea-padding-right">
+            <label><h3>Signup</h3></label>
+            <textarea name="message">crm_userid = %user_id%
+subid = %p%</textarea>
+          </div>
+          <div class="col-6 textarea-padding-left">
+            <label><h3>Deposit</h3></label>
+            <textarea name="message">crm_userid = %user_id%
+subid = %p%</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 select-padding-right">
+            <label><h3>Postback type</h3></label>
+            <select name="postback-type">
+              <option value="">S2S (http://..)</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label><h3>To countries</h3></label>
+            <select name="to-countries">
+              <option value="">Select countries</option>
+            </select>
+          </div>
+          <div class="col-4 select-padding-left">
+            <label><h3>Sending options</h3></label>
+            <select name="sending-options">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="btn-align-right">
+          <button  class="btn" type="submit">Create Pixel</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

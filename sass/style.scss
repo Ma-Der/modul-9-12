@@ -2,7 +2,11 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "components/components";
+@import "components/container";
+@import "components/buttons";
+@import "components/section";
+@import "components/text";
+@import "components/table";
 @import "sections/sidebar";
 @import "sections/navbar";
 @import "sections/general";

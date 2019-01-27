@@ -3,6 +3,15 @@
 @import "normalize";
 @import "layout";
 @import "components/components";
+@import "sections/sidebar";
+@import "sections/navbar";
+@import "sections/general";
+@import "sections/details";
+@import "sections/links";
+@import "sections/banners";
+@import "sections/personaldata";
+@import "sections/payout";
+@import "sections/postback";
 @import "sections/sections";
 @import "pages/pages";
 * {

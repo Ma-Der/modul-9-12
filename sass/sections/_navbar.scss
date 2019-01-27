@@ -1,0 +1,80 @@
+.navbar {
+  background-color: #FFF;
+  border-bottom: 1px solid $disabled-button-color;
+  position: fixed;
+  left: 14.6875%;
+  height: 60px;
+  width: 85.3125%;
+  .notification {
+    border-left: 1px solid $disabled-button-color;
+    height: 60px;
+    position: relative;
+    width: 5%;
+    img {
+      height: 20px;
+      filter: invert(60%);
+      margin: 18px 0;
+      width: 100%;
+    }
+  }
+  .money {
+    border-left: 1px solid $disabled-button-color;
+    color: #9c9c9c;
+    height: 60px;
+    padding: 18px 10px;
+    img {
+      filter: invert(60%);
+      height: 20px;
+    }
+    p {
+      display: inline-block;
+      font-size: 20px;
+      margin: 0 10px 0 15px;
+    }
+    .arrow-down {
+      height: 8px;
+      width: 14px;
+    }
+  }
+}
+.bell-indicator {
+  background-color: #f58220;
+  border-radius: 50%;
+  bottom: 62%;
+  height: 8px;
+  left: 51%;
+  position: absolute;
+  width: 8px;
+  z-index: 1;
+}
+.profile {
+  border-left: 1px solid $disabled-button-color;
+  padding: 18px;
+  height: 60px;
+  img {
+    filter: invert(60%);
+    height: 20px;
+  }
+  .profile-text {
+    height: 24px;
+  }
+  p {
+    color: #9c9c9c;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+.exit {
+  border-left: 1px solid $disabled-button-color;
+  height: 60px;
+  padding: 1.5%;
+  width: 5%;
+  img {
+    filter: invert(60%);
+    height: 16px;
+  }
+}
+.bigger {
+  width: 56.66%;
+}

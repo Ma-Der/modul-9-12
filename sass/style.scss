@@ -9,15 +9,14 @@
 @import "components/table";
 @import "sections/sidebar";
 @import "sections/navbar";
-@import "sections/general";
-@import "sections/details";
-@import "sections/links";
-@import "sections/banners";
-@import "sections/personaldata";
-@import "sections/payout";
-@import "sections/postback";
-@import "sections/sections";
-@import "pages/pages";
+@import "pages/general";
+@import "pages/details";
+@import "pages/links";
+@import "pages/banners";
+@import "pages/personaldata";
+@import "pages/payout";
+@import "pages/postback";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,46 +24,4 @@
 body {
   background-color: #F5F5F2;
   font-family: $main-font;
-}
-
-a {
-  color: $link-color;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-h2 {
-  color: $header-color;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h3 {
-  color: $header-color;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-fieldset {
-  border: none;
-  border-bottom: 1px solid $disabled-button-color;
-  padding: 30px 0;
-}
-input {
-  display: inline-block;
-  padding: 10px;
-  margin: 10px 0;
-  width: 100%;
-}
-textarea {
-  color: $header-color;
-  min-height: 200px;
-  padding: 20px;
-  width: 100%;
-}
-select {
-  padding: 10px;
-  width: 100%;
 }

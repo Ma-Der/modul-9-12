@@ -1,3 +1,45 @@
+a {
+  color: $link-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+h2 {
+  color: $header-color;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $header-color;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid $disabled-button-color;
+  padding: 30px 0;
+}
+input {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+textarea {
+  color: $header-color;
+  min-height: 200px;
+  padding: 20px;
+  width: 100%;
+}
+select {
+  padding: 10px;
+  width: 100%;
+}
+
 .text-warning {
   color: red;
   font-weight: bold;

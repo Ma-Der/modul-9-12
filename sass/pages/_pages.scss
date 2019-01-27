@@ -12,10 +12,32 @@
 
 // POSTBACK //
 
+.postback-send-section {
+  margin-top: 20px;
+}
 .postback-padding {
   padding: 20px;
+  .postback-title {
+    padding: 20px 0;
+    h2, h3 {
+      display: inline-block;
+    }
+  }
 }
-
+.postback-not-send {
+  border-top: 1px solid $disabled-button-color;
+  border-bottom: 1px solid $disabled-button-color;
+  border-right: 1px solid $disabled-button-color;
+  max-height: 300px;
+  .postback-notsend-checkers {
+    max-height: 200px;
+  }
+}
+.postback-send-after {
+  border-top: 1px solid $disabled-button-color;
+  border-bottom: 1px solid $disabled-button-color;
+  height: 300px;
+}
 .textarea-padding-left {
   padding-left: 10px;
 }
@@ -29,7 +51,7 @@
 }
 
 .postback-text {
-  padding: 20px 0;
+  padding: 20px 20px 0;
 }
 
 label h3 {
@@ -40,4 +62,27 @@ label h3 {
 }
 .select-padding-right {
   padding-right: 20px;
+}
+label {
+  font-size: 16px;
+  input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    opacity: 0;
+
+    + .icon {
+      display: inline-block;
+      width: 18px;
+      margin: 18px 10px 18px 20px;
+      height: 18px;
+      border: 2px solid $disabled-button-color;
+    }
+
+    &:checked + .icon {
+      background-color: $disabled-button-color;
+    }
+  }
 }

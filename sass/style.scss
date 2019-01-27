@@ -40,6 +40,7 @@ fieldset {
   padding: 30px 0;
 }
 input {
+  display: inline-block;
   padding: 10px;
   margin: 10px 0;
   width: 100%;
@@ -54,7 +55,3 @@ select {
   padding: 10px;
   width: 100%;
 }
-
-/* Media querries:
-I - 1280px and higher
-II - */

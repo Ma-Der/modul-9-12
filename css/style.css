@@ -589,20 +589,31 @@ table {
 table th {
   border-bottom: 1px solid #E3E3E3;
   height: 40px;
+  padding: 20px 10px;
   text-align: left;
+}
+
+table th:hover {
+  background-color: #f1f3f3;
+  color: #000;
+  cursor: pointer;
 }
 
 table tr {
   height: 40px;
+  overflow: hidden;
 }
 
-table tr:hover {
+table tr:not(.no-hover):hover {
   background-color: #f1f3f3;
+  cursor: pointer;
 }
 
 table td {
   border-right: none;
   border-bottom: 1px solid #E3E3E3;
+  padding: 20px 10px;
+  overflow: hidden;
 }
 
 .tbl-cell-width {
@@ -628,6 +639,35 @@ table td {
 
 .tbl-row-xl {
   height: 50px;
+}
+
+.tbl-container {
+  margin: 10px;
+}
+
+.counter-numbers {
+  padding: 15px;
+  text-align: center;
+}
+
+.counter-numbers p {
+  color: #333333;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.counter-numbers p:hover {
+  background-color: #F2F2F2;
+}
+
+.counter-numbers .counter-font-xl {
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.counter-active {
+  background-color: #F2F2F2;
 }
 
 .sidebar {

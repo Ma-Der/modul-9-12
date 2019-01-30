@@ -866,6 +866,10 @@ table td {
   width: 56.66%;
 }
 
+.mobile {
+  display: none;
+}
+
 .show {
   display: none;
 }

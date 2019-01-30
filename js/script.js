@@ -1,4 +1,5 @@
 'use-strict';
+
 function loadPage(href) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", href, false);
@@ -20,37 +21,51 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 const mainPage = document.getElementById('page');
 
-const generalPage = document.getElementById('general');
-generalPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/general.html');
-});
+const generalPage = document.querySelectorAll('.general');
+  for(let i=0; i < generalPage.length; i++) {
+    generalPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/general.html');
+    });
+  }
 
-const detailsPage = document.getElementById('details');
-detailsPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/details.html');
-});
+const detailsPage = document.querySelectorAll('.details');
+  for(let i=0; i < detailsPage.length; i++) {
+    detailsPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/details.html');
+    });
+  }
 
-const linksPage = document.getElementById('links');
-linksPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/links.html');
-});
+const linksPage = document.querySelectorAll('.links');
+  for(let i=0; i < linksPage.length; i++) {
+    linksPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/links.html');
+    });
+  }
 
-const bannersPage = document.getElementById('banners');
-bannersPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/banners.html');
-});
+const bannersPage = document.querySelectorAll('.banners');
+  for( let i=0; i < bannersPage.length; i++) {
+    bannersPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/banners.html');
+    });
+  }
 
-const personaldataPage = document.getElementById('personaldata');
-personaldataPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/personaldata.html');
-});
+const personaldataPage = document.querySelectorAll('.personaldata');
+  for(let i=0; i < personaldataPage.length; i++) {
+    personaldataPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/personaldata.html');
+    });
+  }
 
-const payoutPage = document.getElementById('payout');
-payoutPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/payout.html');
-});
+const payoutPage = document.querySelectorAll('.payout');
+  for(let i=0; i < payoutPage.length; i++) {
+    payoutPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/payout.html');
+    });
+  }
 
-const postbackPage = document.getElementById('postback');
-postbackPage.addEventListener('click', function(){
-  mainPage.innerHTML = loadPage('./src/postback.html');
-});
+const postbackPage = document.querySelectorAll('.postback');
+  for(let i=0; i < postbackPage.length; i++) {
+    postbackPage[i].addEventListener('click', function(){
+      mainPage.innerHTML = loadPage('./src/postback.html');
+    });
+  }

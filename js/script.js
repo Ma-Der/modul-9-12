@@ -6,6 +6,15 @@ function loadPage(href) {
   return xmlhttp.responseText;
 }
 
+function toggleMenu(visible) {
+  document.querySelector('.mobile-menu').classList.toggle('show', visible);
+}
+
+document.querySelector('.mobile-hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+
 document.addEventListener('DOMContentLoaded', function(){
   mainPage.innerHTML = loadPage('./src/general.html');
 });

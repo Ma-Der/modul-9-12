@@ -6,7 +6,6 @@
 	border: none;
   display: flex;
 	min-height: 1px;
-	overflow: auto;
 }
 @for $i from 1 through 12 {
 	.col-#{$i} {

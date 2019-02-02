@@ -2,12 +2,9 @@
   background-color: #FFF;
   border-bottom: 1px solid $disabled-button-color;
   position: fixed;
-  left: 14.6875%;
-  height: 60px;
-  width: 85.3125%;
+  width: 100%;
   .notification {
     border-left: 1px solid $disabled-button-color;
-    height: 60px;
     position: relative;
     width: 5%;
     img {
@@ -20,7 +17,8 @@
   .money {
     border-left: 1px solid $disabled-button-color;
     color: #9c9c9c;
-    height: 60px;
+    align-items: center;
+    justify-content: flex-end;
     padding: 18px 10px;
     img {
       filter: invert(60%);
@@ -50,31 +48,30 @@
 .profile {
   border-left: 1px solid $disabled-button-color;
   padding: 18px;
-  height: 60px;
+  align-items: center;
+  justify-content: center;
   img {
     filter: invert(60%);
     height: 20px;
   }
-  .profile-text {
-    height: 24px;
-  }
   p {
     color: #9c9c9c;
     font-size: 14px;
-    margin-top: 5px;
     text-align: center;
   }
 }
 .exit {
   border-left: 1px solid $disabled-button-color;
-  height: 60px;
-  padding: 1.5%;
-  width: 5%;
+  align-items: center;
+  justify-content: center;
   img {
     filter: invert(60%);
     height: 16px;
   }
 }
-.bigger {
-  width: 56.66%;
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
 }

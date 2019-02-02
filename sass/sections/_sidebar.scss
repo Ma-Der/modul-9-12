@@ -93,3 +93,9 @@
   width: 8px;
   z-index: 12;
 }
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}

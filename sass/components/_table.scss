@@ -6,7 +6,7 @@ table {
   width: 100%;
   th {
     border-bottom: 1px solid $disabled-button-color;
-    height: 40px;
+    //height: 40px;
     padding: 20px 10px;
     text-align: left;
     &:hover {
@@ -16,7 +16,7 @@ table {
     }
   }
   tr {
-    height: 40px;
+    //height: 40px;
     overflow: hidden;
 
     &:not(.no-hover):hover {
@@ -33,7 +33,7 @@ table {
 }
 
 .tbl-cell-width {
-  width: 280px;
+//  width: 280px;
 }
 .tbl-cell-text {
   color: $header-color;

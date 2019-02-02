@@ -1,5 +1,8 @@
 .mobile {
   display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 .show {
   display: none;
@@ -183,5 +186,11 @@
     img {
       filter: invert(60%);
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile {
+    display: block;
   }
 }

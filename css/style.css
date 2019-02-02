@@ -342,7 +342,6 @@ template {
   border: none;
   display: flex;
   min-height: 1px;
-  overflow: auto;
 }
 
 .col-1 {
@@ -503,9 +502,9 @@ template {
   box-shadow: 5px 5px 20px 10px #e9e9e7;
   float: right;
   min-height: 300px;
-  margin: 80px 20px 20px;
+  margin: 80px 20px 20px 10px;
   padding-bottom: 20px;
-  width: 82.1875%;
+  width: 82.125%;
 }
 
 .section::before, .section::after {
@@ -519,6 +518,14 @@ template {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    float: left;
+    margin: 80px auto 0;
+    width: 100%;
+  }
 }
 
 a {
@@ -581,7 +588,6 @@ table {
 
 table th {
   border-bottom: 1px solid #E3E3E3;
-  height: 40px;
   padding: 20px 10px;
   text-align: left;
 }
@@ -593,7 +599,6 @@ table th:hover {
 }
 
 table tr {
-  height: 40px;
   overflow: hidden;
 }
 
@@ -607,10 +612,6 @@ table td {
   border-bottom: 1px solid #E3E3E3;
   padding: 20px 10px;
   overflow: hidden;
-}
-
-.tbl-cell-width {
-  width: 280px;
 }
 
 .tbl-cell-text {
@@ -771,18 +772,21 @@ table td {
   z-index: 12;
 }
 
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 .navbar {
   background-color: #FFF;
   border-bottom: 1px solid #E3E3E3;
   position: fixed;
-  left: 14.6875%;
-  height: 60px;
-  width: 85.3125%;
+  width: 100%;
 }
 
 .navbar .notification {
   border-left: 1px solid #E3E3E3;
-  height: 60px;
   position: relative;
   width: 5%;
 }
@@ -797,7 +801,8 @@ table td {
 .navbar .money {
   border-left: 1px solid #E3E3E3;
   color: #9c9c9c;
-  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
   padding: 18px 10px;
 }
 
@@ -831,7 +836,8 @@ table td {
 .profile {
   border-left: 1px solid #E3E3E3;
   padding: 18px;
-  height: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile img {
@@ -839,22 +845,16 @@ table td {
   height: 20px;
 }
 
-.profile .profile-text {
-  height: 24px;
-}
-
 .profile p {
   color: #9c9c9c;
   font-size: 14px;
-  margin-top: 5px;
   text-align: center;
 }
 
 .exit {
   border-left: 1px solid #E3E3E3;
-  height: 60px;
-  padding: 1.5%;
-  width: 5%;
+  align-items: center;
+  justify-content: center;
 }
 
 .exit img {
@@ -862,12 +862,17 @@ table td {
   height: 16px;
 }
 
-.bigger {
-  width: 56.66%;
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .mobile {
   display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 
 .show {
@@ -1067,6 +1072,12 @@ table td {
 
 .mobile-navbar .mobile-exit img {
   filter: invert(60%);
+}
+
+@media (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
 }
 
 .date {

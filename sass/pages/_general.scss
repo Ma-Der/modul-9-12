@@ -1,9 +1,7 @@
 .date {
   border-bottom: 1px solid $disabled-button-color;
   min-height: 110px;
-  button {
-    margin-top: 35px;
-  }
+
   .date-img {
     text-align: right;
     padding: 10px;
@@ -25,4 +23,16 @@
 }
 .chart {
   margin-top: 45px;
+}
+.scroll-wrapper img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.earnings {
+  flex-wrap: wrap;
+  h3 {
+    padding: 0 10px;
+    width: 100%;
+  }
 }

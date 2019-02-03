@@ -336,6 +336,8 @@ template {
 .row {
   border: none;
   display: flex;
+  width: 100%;
+  max-width: 100%;
 }
 
 [class*="col-"] {
@@ -441,6 +443,9 @@ template {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   max-width: 685px;
 }
@@ -503,6 +508,7 @@ template {
   float: right;
   min-height: 300px;
   margin: 80px 20px 20px 10px;
+  overflow: hidden;
   padding-bottom: 20px;
   width: 82.125%;
 }
@@ -518,6 +524,11 @@ template {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
 }
 
 @media (max-width: 480px) {
@@ -614,6 +625,11 @@ table td {
   overflow: hidden;
 }
 
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
+
 .tbl-cell-text {
   color: #a6a6a6;
   font-weight: bold;
@@ -665,6 +681,8 @@ table td {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: #191919;
   height: 100vh;
   position: fixed;
@@ -745,12 +763,12 @@ table td {
   font-size: 14px;
 }
 
-.manager-photo {
-  height: 90px;
+.photo {
   position: relative;
+  padding: 0 10px;
 }
 
-.manager-photo img {
+.photo img {
   filter: invert(0%);
   height: 45px;
   width: 45px;
@@ -764,9 +782,9 @@ table td {
 .indicator {
   background-color: #04ae00;
   border-radius: 50%;
-  bottom: 78%;
+  bottom: 65%;
   height: 8px;
-  left: 63%;
+  left: 70%;
   position: absolute;
   width: 8px;
   z-index: 12;
@@ -848,6 +866,7 @@ table td {
 .profile p {
   color: #9c9c9c;
   font-size: 14px;
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -860,6 +879,7 @@ table td {
 .exit img {
   filter: invert(60%);
   height: 16px;
+  width: 16px;
 }
 
 @media (max-width: 480px) {
@@ -1085,10 +1105,6 @@ table td {
   min-height: 110px;
 }
 
-.date button {
-  margin-top: 35px;
-}
-
 .date .date-img {
   text-align: right;
   padding: 10px;
@@ -1116,6 +1132,20 @@ table td {
   margin-top: 45px;
 }
 
+.scroll-wrapper img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.earnings {
+  flex-wrap: wrap;
+}
+
+.earnings h3 {
+  padding: 0 10px;
+  width: 100%;
+}
+
 .button-align {
   text-align: center;
 }
@@ -1140,21 +1170,27 @@ table td {
   display: inline-block;
 }
 
+.signup, .deposit, .postback, .countries, .sending {
+  flex-wrap: wrap;
+}
+
 .postback-not-send {
   border-top: 1px solid #E3E3E3;
   border-bottom: 1px solid #E3E3E3;
   border-right: 1px solid #E3E3E3;
   max-height: 300px;
+  flex-direction: column;
 }
 
 .postback-not-send .postback-notsend-checkers {
   max-height: 200px;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .postback-send-after {
   border-top: 1px solid #E3E3E3;
   border-bottom: 1px solid #E3E3E3;
-  height: 300px;
 }
 
 .textarea-padding-left {

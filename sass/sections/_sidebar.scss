@@ -1,4 +1,6 @@
-.sidebar{
+.sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: #191919;
   height: 100vh;
   position: fixed;
@@ -70,14 +72,17 @@
     font-size: 14px;
   }
 }
-.manager-photo {
-  height: 90px;
+.photo {
   position: relative;
+  padding: 0 10px;
   img {
     filter: invert(0%);
     height: 45px;
     width: 45px;
   }
+}
+.manager-photo {
+  
 }
 .manager-name {
   color: #425e72;
@@ -86,9 +91,9 @@
 .indicator {
   background-color: #04ae00;
   border-radius: 50%;
-  bottom: 78%;
+  bottom: 65%;
   height: 8px;
-  left: 63%;
+  left: 70%;
   position: absolute;
   width: 8px;
   z-index: 12;

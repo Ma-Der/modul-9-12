@@ -10,19 +10,25 @@
     }
   }
 }
+.signup, .deposit, .postback, .countries, .sending {
+  flex-wrap: wrap;
+}
 .postback-not-send {
   border-top: 1px solid $disabled-button-color;
   border-bottom: 1px solid $disabled-button-color;
   border-right: 1px solid $disabled-button-color;
   max-height: 300px;
+  flex-direction: column;
   .postback-notsend-checkers {
     max-height: 200px;
+    flex-direction: column;
+    overflow-y: auto;
   }
 }
+
 .postback-send-after {
   border-top: 1px solid $disabled-button-color;
   border-bottom: 1px solid $disabled-button-color;
-  height: 300px;
 }
 .textarea-padding-left {
   padding-left: 10px;

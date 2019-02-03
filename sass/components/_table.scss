@@ -32,9 +32,11 @@ table {
   }
 }
 
-.tbl-cell-width {
-//  width: 280px;
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
 }
+
 .tbl-cell-text {
   color: $header-color;
   font-weight: bold;

@@ -43,7 +43,13 @@
 }
 
 .postback-text {
-  padding: 20px 20px 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.checkers {
+  align-items: center;
+  justify-content: center;
 }
 
 label h3 {
@@ -59,16 +65,14 @@ label {
   font-size: 16px;
   input[type="checkbox"] {
     position: absolute;
-    margin: 0;
+    //margin: 0;
     width: 18px;
     height: 18px;
-    margin-right: 10px;
     opacity: 0;
 
     + .icon {
-      display: inline-block;
       width: 18px;
-      margin: 18px 10px 18px 20px;
+      padding: 5px;
       height: 18px;
       border: 2px solid $disabled-button-color;
     }

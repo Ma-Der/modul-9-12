@@ -1,0 +1,26 @@
+.date {
+  border-bottom: 1px solid $disabled-button-color;
+  min-height: 110px;
+
+  .date-img {
+    text-align: right;
+    padding: 10px;
+  }
+}
+.date-line {
+  border: 1px solid $disabled-button-color;
+  align-items: center;
+  justify-content: center;
+  .border {
+    border-right: 1px solid $disabled-button-color;
+  }
+  p {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  p {
+    font-size: 14px;
+  }
+}

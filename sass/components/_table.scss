@@ -6,7 +6,6 @@ table {
   width: 100%;
   th {
     border-bottom: 1px solid $disabled-button-color;
-    //height: 40px;
     padding: 20px 10px;
     text-align: left;
     &:hover {
@@ -16,7 +15,6 @@ table {
     }
   }
   tr {
-    //height: 40px;
     overflow: hidden;
 
     &:not(.no-hover):hover {
@@ -49,9 +47,6 @@ table {
 }
 .tbl-border-top {
   border-top: 1px solid $disabled-button-color;
-}
-.tbl-row-xl {
-  height: 50px;
 }
 .tbl-container {
   margin: 10px;

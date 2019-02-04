@@ -19,3 +19,16 @@
 .counter-active {
   background-color: $checkbox-hover-color;
 }
+
+@media (max-width: 445px) {
+  .counter-numbers {
+    padding: 10px;
+    p {
+      font-size: 16px;
+      padding: 5px;
+      }
+    }
+    .counter-font-xl {
+      font-size: 16px;
+    }
+}

@@ -1,8 +1,7 @@
 .row {
   border: none;
   display: flex;
-  //width: 100%;
-  //max-width: 100%;
+  max-width: 100%;
 }
 [class*="col-"] {
 	border: none;
@@ -19,4 +18,61 @@
 	.col-offset-#{$i} {
 		width: ((100%/12) * $i);
 	}
+}
+
+@media (min-width: 1200px) {
+  @for $i from 1 through 12 {
+  	.col-xl-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+
+  @for $i from 0 through 11 {
+  	.col-xl-offset-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+}
+
+@media (min-width: 992px) {
+  @for $i from 1 through 12 {
+  	.col-lg-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+
+  @for $i from 0 through 11 {
+  	.col-lg-offset-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through 12 {
+  	.col-md-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+
+
+  @for $i from 0 through 11 {
+  	.col-md-offset-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+}
+
+@media (min-width: 576px) {
+  @for $i from 1 through 12 {
+  	.col-sm-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
+
+  @for $i from 0 through 11 {
+  	.col-sm-offset-#{$i} {
+  		width: ((100%/12) * $i);
+  	}
+  }
 }

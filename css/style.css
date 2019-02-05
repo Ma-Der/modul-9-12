@@ -336,6 +336,7 @@ template {
 .row {
   border: none;
   display: flex;
+  max-width: 100%;
 }
 
 [class*="col-"] {
@@ -438,6 +439,306 @@ template {
 
 .col-offset-11 {
   width: 91.66667%;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33333%;
+  }
+  .col-xl-2 {
+    width: 16.66667%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+  .col-xl-5 {
+    width: 41.66667%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33333%;
+  }
+  .col-xl-8 {
+    width: 66.66667%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33333%;
+  }
+  .col-xl-11 {
+    width: 91.66667%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .col-xl-offset-0 {
+    width: 0%;
+  }
+  .col-xl-offset-1 {
+    width: 8.33333%;
+  }
+  .col-xl-offset-2 {
+    width: 16.66667%;
+  }
+  .col-xl-offset-3 {
+    width: 25%;
+  }
+  .col-xl-offset-4 {
+    width: 33.33333%;
+  }
+  .col-xl-offset-5 {
+    width: 41.66667%;
+  }
+  .col-xl-offset-6 {
+    width: 50%;
+  }
+  .col-xl-offset-7 {
+    width: 58.33333%;
+  }
+  .col-xl-offset-8 {
+    width: 66.66667%;
+  }
+  .col-xl-offset-9 {
+    width: 75%;
+  }
+  .col-xl-offset-10 {
+    width: 83.33333%;
+  }
+  .col-xl-offset-11 {
+    width: 91.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    width: 8.33333%;
+  }
+  .col-lg-2 {
+    width: 16.66667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+  .col-lg-5 {
+    width: 41.66667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33333%;
+  }
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+  .col-lg-11 {
+    width: 91.66667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-offset-0 {
+    width: 0%;
+  }
+  .col-lg-offset-1 {
+    width: 8.33333%;
+  }
+  .col-lg-offset-2 {
+    width: 16.66667%;
+  }
+  .col-lg-offset-3 {
+    width: 25%;
+  }
+  .col-lg-offset-4 {
+    width: 33.33333%;
+  }
+  .col-lg-offset-5 {
+    width: 41.66667%;
+  }
+  .col-lg-offset-6 {
+    width: 50%;
+  }
+  .col-lg-offset-7 {
+    width: 58.33333%;
+  }
+  .col-lg-offset-8 {
+    width: 66.66667%;
+  }
+  .col-lg-offset-9 {
+    width: 75%;
+  }
+  .col-lg-offset-10 {
+    width: 83.33333%;
+  }
+  .col-lg-offset-11 {
+    width: 91.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33333%;
+  }
+  .col-md-2 {
+    width: 16.66667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33333%;
+  }
+  .col-md-5 {
+    width: 41.66667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33333%;
+  }
+  .col-md-8 {
+    width: 66.66667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33333%;
+  }
+  .col-md-11 {
+    width: 91.66667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-offset-0 {
+    width: 0%;
+  }
+  .col-md-offset-1 {
+    width: 8.33333%;
+  }
+  .col-md-offset-2 {
+    width: 16.66667%;
+  }
+  .col-md-offset-3 {
+    width: 25%;
+  }
+  .col-md-offset-4 {
+    width: 33.33333%;
+  }
+  .col-md-offset-5 {
+    width: 41.66667%;
+  }
+  .col-md-offset-6 {
+    width: 50%;
+  }
+  .col-md-offset-7 {
+    width: 58.33333%;
+  }
+  .col-md-offset-8 {
+    width: 66.66667%;
+  }
+  .col-md-offset-9 {
+    width: 75%;
+  }
+  .col-md-offset-10 {
+    width: 83.33333%;
+  }
+  .col-md-offset-11 {
+    width: 91.66667%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-1 {
+    width: 8.33333%;
+  }
+  .col-sm-2 {
+    width: 16.66667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+  .col-sm-5 {
+    width: 41.66667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33333%;
+  }
+  .col-sm-8 {
+    width: 66.66667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.33333%;
+  }
+  .col-sm-11 {
+    width: 91.66667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-offset-0 {
+    width: 0%;
+  }
+  .col-sm-offset-1 {
+    width: 8.33333%;
+  }
+  .col-sm-offset-2 {
+    width: 16.66667%;
+  }
+  .col-sm-offset-3 {
+    width: 25%;
+  }
+  .col-sm-offset-4 {
+    width: 33.33333%;
+  }
+  .col-sm-offset-5 {
+    width: 41.66667%;
+  }
+  .col-sm-offset-6 {
+    width: 50%;
+  }
+  .col-sm-offset-7 {
+    width: 58.33333%;
+  }
+  .col-sm-offset-8 {
+    width: 66.66667%;
+  }
+  .col-sm-offset-9 {
+    width: 75%;
+  }
+  .col-sm-offset-10 {
+    width: 83.33333%;
+  }
+  .col-sm-offset-11 {
+    width: 91.66667%;
+  }
 }
 
 .container {
@@ -743,7 +1044,7 @@ table td {
 .sidebar .sidebar-link {
   border-left: 5px solid #191919;
   cursor: pointer;
-  height: 40px;
+  padding: 5px 0;
   width: 100%;
 }
 
@@ -761,10 +1062,6 @@ table td {
   width: 100%;
 }
 
-.sidebar .icon-link {
-  height: 40px;
-}
-
 .sidebar .icon-link p {
   filter: invert(60%);
   font-size: 14px;
@@ -778,11 +1075,15 @@ table td {
   width: 100%;
 }
 
+.logo {
+  margin: 0 auto;
+}
+
 .logo img {
   filter: invert(0%);
   height: 20px;
   margin: 20px auto;
-  width: 45.75%;
+  width: 100%;
 }
 
 .hamburger img {
@@ -801,6 +1102,11 @@ table td {
   font-size: 14px;
 }
 
+.manager-photo {
+  align-items: center;
+  justify-content: center;
+}
+
 .photo {
   position: relative;
   padding: 0 10px;
@@ -814,7 +1120,6 @@ table td {
 
 .manager-name {
   color: #425e72;
-  line-height: 65px;
 }
 
 .indicator {
@@ -828,6 +1133,43 @@ table td {
   z-index: 12;
 }
 
+@media (max-width: 992px) {
+  .manager {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .manager h2 {
+    font-size: 14px;
+  }
+  .manager-photo {
+    flex-direction: column;
+  }
+  .photo {
+    position: relative;
+    padding: 0 10px;
+  }
+  .photo img {
+    filter: invert(0%);
+    height: 45px;
+    width: 45px;
+  }
+  .manager-name {
+    color: #425e72;
+  }
+  .indicator {
+    background-color: #04ae00;
+    border-radius: 50%;
+    bottom: 65%;
+    height: 8px;
+    left: 70%;
+    position: absolute;
+    width: 8px;
+    z-index: 12;
+  }
+}
+
 @media (max-width: 576px) {
   .sidebar {
     display: none;
@@ -835,23 +1177,26 @@ table td {
 }
 
 .navbar {
+  align-items: center;
+  justify-content: flex-end;
   background-color: #FFF;
   border-bottom: 1px solid #E3E3E3;
+  overflow: hidden;
   position: fixed;
   width: 100%;
 }
 
 .navbar .notification {
+  align-items: center;
+  justify-content: center;
   border-left: 1px solid #E3E3E3;
   position: relative;
-  width: 5%;
+  padding: 20px;
 }
 
 .navbar .notification img {
   height: 20px;
   filter: invert(60%);
-  margin: 18px 0;
-  width: 100%;
 }
 
 .navbar .money {
@@ -881,7 +1226,7 @@ table td {
 .bell-indicator {
   background-color: #f58220;
   border-radius: 50%;
-  bottom: 62%;
+  bottom: 55%;
   height: 8px;
   left: 51%;
   position: absolute;
@@ -912,6 +1257,7 @@ table td {
   border-left: 1px solid #E3E3E3;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .exit img {
@@ -1080,7 +1426,6 @@ table td {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 5%;
 }
 
 .mobile-navbar .mobile-notification img {

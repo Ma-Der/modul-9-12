@@ -8,6 +8,34 @@
 	<title>Just do it</title>
 </head>
 <body>
+	<div class="overlay" id="overlay">
+		<div class="modal" id="myModal">
+			<div class="modal-head row">
+				<div class="section-title col-10"><h2>online chat with your personal manager</h2></div>
+				<div class="btn-close js--close-modal col-2">x</div>
+			</div>
+			<div class="row modal-chat-person">
+				<div class="mobile-manager-photo">
+					<div class="mobile-photo">
+						<img src="../images/managerphoto.png" alt="manager">
+						<div class="mobile-manager-indicator"></div>
+					</div>
+				</div>
+				<div class="modal-manager-name">
+					<p class="mobile-manager-name">Mikhael E.</p>
+					<div><p>online</p></div>
+				</div>
+			</div>
+			<div class="row chat-message">
+				<form class="col-11">
+					<fieldset>
+						<input type="text" name="send-chat" placeholder="Enter message">
+					</fieldset>
+				</form>
+				<button class="col-1 btn js--close-modal">Send</button>
+			</div>
+		</div>
+	</div>
 	<div class="mobile">
 			<div class="row mobile-logo-part">
 		    <div class="col-8 mobile-logo"><img src="../images/logo.png" alt="logo"></div>
@@ -48,7 +76,7 @@
 		    <div class="row">
 		      <div class="col-12 mobile-manager"><h2>your manager</h2></div>
 		    </div>
-		    <div class="row">
+		    <div class="row chat">
 		      <div class="col-6 mobile-manager-photo">
 		        <div class="mobile-photo">
 		          <img src="../images/managerphoto.png" alt="manager">
@@ -137,7 +165,7 @@
 			<div class="row">
 				<div class="col-12 manager"><h2>your manager</h2></div>
 			</div>
-			<div class="row">
+			<div class="row chat">
 				<div class="col-12 manager-photo">
 					<div class="photo">
 						<img src="./images/managerphoto.png" alt="manager">

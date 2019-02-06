@@ -35,7 +35,6 @@
     width: 100%;
     }
   .icon-link {
-  //  padding: 0 5px;
     p {
       filter: invert(60%);
       font-size: 14px;
@@ -107,35 +106,9 @@
     justify-content: center;
     padding: 10px;
     margin: 0;
-    h2 {
-      font-size: 14px;
-    }
   }
   .manager-photo {
     flex-direction: column;
-  }
-  .photo {
-    position: relative;
-    padding: 0 10px;
-    img {
-      filter: invert(0%);
-      height: 45px;
-      width: 45px;
-    }
-  }
-  .manager-name {
-    color: #425e72;
-
-  }
-  .indicator {
-    background-color: #04ae00;
-    border-radius: 50%;
-    bottom: 65%;
-    height: 8px;
-    left: 70%;
-    position: absolute;
-    width: 8px;
-    z-index: 12;
   }
 }
 
